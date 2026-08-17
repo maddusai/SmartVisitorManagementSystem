@@ -1,4 +1,5 @@
-const API_BASE = "https://smart-visitor-management-backend.onrender.com/api";
+const API_BASE = "http://localhost:8080/api";
+
 
 // === Register Employee ===
 document.getElementById("registerEmpBtn").addEventListener("click", async () => {
