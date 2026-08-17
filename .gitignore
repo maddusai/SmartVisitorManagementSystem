@@ -1,0 +1,24 @@
+# Build files
+/backend/target/
+*.class
+*.jar
+*.log
+
+# IDE settings
+*.iml
+.vscode/
+.idea/
+.classpath
+.project
+.settings/
+
+# Node
+/frontend/node_modules/
+
+# Environment / secrets
+application-local.properties
+.env
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Visitor Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Visitor Management System</h1>
+
+    <!-- Employee Registration -->
+<section>
+  <h2>Register Employee</h2>
+  <input type="text" id="empName" placeholder="Employee Name" />
+  <input type="email" id="empEmail" placeholder="Employee Email" />
+  <input type="text" id="empDepartment" placeholder="Department" />
+
+  <button id="registerEmpBtn">Register Employee</button>
+
+  <h3>Get All Employees</h3>
+  <button id="getAllEmpBtn">Load Employees</button>
+  <ul id="employeeList"></ul>
+
+  <h3>Get Employee by ID</h3>
+  <input type="number" id="empIdInput" placeholder="Enter Employee ID" />
+  <button id="getEmpByIdBtn">Get Employee</button>
+  <div id="singleEmployeeResult"></div>
+</section>
+
+
+
+    <!-- Visitor Registration -->
+    <section>
+      <h2>Register Visitor</h2>
+      <input type="text" id="visitorName" placeholder="Visitor Name" />
+      <input type="text" id="visitorPhone" placeholder="Phone Number" />
+      <input type="text" id="visitorPurpose" placeholder="Purpose of Visit" />
+      <input type="email" id="visitorEmail" placeholder="Visitor Email" />
+
+      <button id="registerVisitorBtn">Register Visitor</button>
+    </section>
+
+    <!-- Get All Visitors -->
+<section>
+  <h2>All Visitors</h2>
+  <button id="getAllVisitorsBtn">Load Visitors</button>
+  <ul id="visitorList"></ul>
+</section>
+
+<!-- Get Visitor by ID -->
+<section>
+  <h2>Get Visitor By ID</h2>
+  <input type="number" id="getVisitorId" placeholder="Visitor ID" />
+  <button id="getVisitorBtn">Get Visitor</button>
+  <p id="singleVisitorResult"></p>
+</section>
+
+    <!-- Check-In -->
+    <section>
+      <h2>Visitor Check-In</h2>
+      <input type="number" id="checkinVisitorId" placeholder="Visitor ID" />
+      <input type="number" id="checkinEmployeeId" placeholder="Employee ID" />
+      <button id="checkInBtn">Check In</button>
+    </section>
+
+    <!-- Check-Out -->
+    <section>
+      <h2>Visitor Check-Out</h2>
+      <input type="number" id="checkoutVisitId" placeholder="Visit Log ID" />
+      <button id="checkOutBtn">Check Out</button>
+    </section>
+
+    <!-- Visit Logs -->
+    <section>
+      <h2>Visit Logs</h2>
+      <button id="fetchLogsBtn">Load Visit Logs</button>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Visit ID</th>
+            <th>Visitor</th>
+            <th>Employee</th>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="logsTableBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
